@@ -1,0 +1,37 @@
+/* Prevent the default Vite layout from squeezing the application */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Do not apply Vite's default centered layout */
+body {
+  display: block;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Keep the application full-width */
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Reset default button styles */
+button {
+  font-family: inherit;
+}
+
+/* Keep charts and dashboard cards inside their containers */
+.chart-container {
+  min-width: 0;
+}
+
+.stats-grid > *,
+.analytics-grid > * {
+  min-width: 0;
+}
